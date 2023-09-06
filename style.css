@@ -1,0 +1,1143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+/* ----------------------      LOGIN FORM  --------------------- */
+
+
+
+.login-container{
+    background-image: url(images/login-image.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    /* padding: 0 140px; */
+}
+
+.login-desccription h1{
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.login-desccription img{
+    padding:  10px 0;
+}
+
+.login-desccription form{
+    text-align: start;
+    background: url(images/bg-white-lock.png);
+    padding: 70px 30px;
+    width: 390px;
+} 
+
+.login-desccription form h2{
+    font-weight: 300;
+    margin-top: -15px;
+}
+
+.login-desccription .control-group{
+    margin-top: 10px;
+}
+
+.control-group i{
+    position: absolute;
+    /* color: #868181; */
+    /* color: #6eac50; */
+    color: #3071d8;
+    margin: 15px 10px;
+}
+
+
+.login-desccription form input{
+    width: 100%;
+    padding: 10px 35px;
+    margin: 6px 0px;
+    outline: none;
+    border: 0;
+}
+
+.login-desccription form a{
+    float: right;
+    margin-top: 10px ;
+    text-decoration: none;
+    padding: 8px 20px;
+    color: white;
+    background-color: #3071d8;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.login-desccription form a:hover{
+    background-color:#4d90fe; 
+}
+
+
+.login-desccription form a .fa-solid{
+    margin-left: 2px;
+}
+
+
+
+
+/* ---------------------------         HOME        ------------------------------ */
+
+nav .menu-bar i{
+    line-height: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    color: #3071d8;
+}
+
+#click{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.navbar ul{
+    display: flex;
+    /* margin-top: 10px; */
+}
+
+nav ul li{
+    margin: 10px 17px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Kanit';
+    position: relative;
+}
+
+
+.navbar ul li a:after{
+    position: absolute;
+    content: "";
+    background-color: #6eac50;
+    height: 3px;
+    width: 0;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover{
+    color: #6eac50;
+}
+
+.navbar ul li a:hover:after{
+    width: 100%;
+} 
+
+.navbar ul li a#contact{
+    border: 2px solid #6eac50;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.navbar ul li a#contact:hover{
+    background-color: #6eac50;
+    color: white;
+}
+
+.navbar ul li a#contact:after{
+   height: 0; 
+}
+
+
+
+/* ---------------------------         UTILITY CLASS     ------------------------------ */
+
+
+
+.container{
+    padding: 50px 110px;
+}
+
+
+
+/* ------------------------------          HOME        -------------------------- */
+
+
+#home{
+    background-image: url(images/aboutbanner.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    color: white;
+    font-family: 'Poppins';
+    margin-top: 80px;
+}
+
+.home-container h2{
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 35px;
+    word-spacing: 5px;
+}
+
+.home-container p{
+    font-weight: 500;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.home-description {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.home-description .home-slogan{
+    display: flex;
+    flex-basis: 25%;
+}
+
+.home-description .home-slogan .home-icon i{
+    color: #E81E1E;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.home-slogan .home-content{
+    margin-left: 30px;
+}
+
+.home-content h3{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.home-content p{
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+
+
+/* ------------------------------------        ABOUT       ----------------------------------------------- */
+
+
+
+#about{
+    padding: 80px 110px;
+    font-family: 'Poppins';
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 14px 0px;
+}
+
+#about h2{
+    font-size: 38px ;
+    color: #2B2A2A;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 6px 0;
+}
+
+#about p{
+    margin: 20px 0;
+    text-align: justify;
+    color: #4e4e4e;
+}
+
+
+
+/* -------------------------------------------------       WHAT WE DO        ------------------------ */
+
+#what-we-do{
+    padding: 80px 110px;
+    font-family: 'Poppins';
+    box-shadow: 0 1px 14px 0 rgba(0,0,0,0.50);
+}
+
+#what-we-do h2{
+    margin: 6px 0;
+    font-size: 38px ;
+    color: #2B2A2A;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.what-we-do-row1, .what-we-do-row2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 0;
+}
+
+.what-we-do-card{
+    flex-basis: 20%;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    padding: 40px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.what-we-do-card:hover{
+    transform: translateY(-10px);
+}
+
+.what-we-do-card .what-we-do-icon{
+    text-align: center;
+}
+
+.what-we-do-card .what-we-do-text{
+    text-align: center;
+    margin: 8px 0;
+    text-transform: capitalize;
+    color: #373535;
+    padding: 0 12px;
+}
+
+
+
+
+
+
+/* ----------------------------        HARDWARE PRODUCTS       -------------------------------- */
+
+
+
+
+#product{
+    padding: 80px 110px;
+    font-family: 'Poppins';
+    box-shadow: 0 1px 14px 0 rgba(0,0,0,0.50);
+}
+
+
+#product h2{
+    margin: 6px 0;
+    font-size: 30px ;
+    color: #2B2A2A;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#product>p{
+    margin: 18px 0;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 0;
+}
+
+.product-card{
+    margin: 0 20px;
+    padding: 15px 25px;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.product-card-img {
+    margin: 20px 0;
+}
+
+.product-card:hover .product-card-img img{
+    transform: scale(1.1);
+}
+
+.product-card-img img{
+    transition: 0.3s;
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.product-card p{
+    text-align: justify;
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.product-card a{
+    text-decoration: none;
+}
+
+.product-card .pdf-text{
+    font-size: 15px;
+    float: right;
+    margin-top: -60px;
+    padding-left: 70px;
+    color: #2B2A2A;
+}
+
+img.pdf-logo{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 6px;
+}
+
+
+
+
+
+/* --------------------------------------      FOOTER          ------------------------------------- */
+
+
+
+
+footer{
+    font-size: 14px;
+    padding: 40px 50px;
+    background-color: #111214;
+    color: #949ba7;
+    font-family: 'Poppins';
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container h4{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.footer-container .company, .footer-container .address, .footer-container .social-links{
+    flex-basis: 30%;
+}
+
+.company a{
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
+    color: #949ba7;
+    text-transform: capitalize;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.address address{
+    padding: 12px 0;
+    line-height: 28px;
+}
+
+.social-links a{
+    margin-right: 20px;
+}
+
+.social-links i{
+    font-size: 22px;
+    color: #949ba7;
+    transition: 0.3s;
+}
+
+.social-links i:hover , .company a:hover{
+    color: #6eac50;
+}
+
+footer P{
+    text-align: center;
+    margin-top: 38px;
+    font-size: 16px;
+}
+
+
+
+
+
+/* ----------------------------        SERVICES    ------------------------- */
+
+
+.service-note{
+    margin-top: 30px;
+    text-align: center;
+    color: #4e4e4e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.service-note span{
+    color: #6eac50;
+}
+
+.service-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    font-family: 'Poppins';
+}
+
+.service-card {
+    box-shadow: 0px 5px 10px 0px #aaa;   
+    border-radius: 8px;
+    /* flex-basis: 20%; */
+    margin: 0 25px;
+    transition: 0.3s;
+}
+
+.service-card:hover{
+    transform: translateY(-10px);
+}
+
+.service-card .card-header{
+    padding: 20px 30px;
+    background: linear-gradient(318.25deg, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 92.16%, rgba(74, 42, 150, 0) 109.15%), rgb(29, 82, 157);
+    color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.service-card .card-top{
+    display: flex;
+}
+
+.card-top .service-title{
+    margin-left: 15px;
+}
+
+.subscription-name{
+    padding-right: 30px;
+}
+
+.service-card ul{
+    padding: 30px 40px;
+}
+
+.service-card .service-btn{
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.service-card .service-btn .purchase{
+    padding: 10px 30px;
+    background: linear-gradient(318.25deg, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 92.16%, rgba(74, 42, 150, 0) 109.15%), rgb(29, 82, 157);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    transition: 0.4s;
+}
+
+
+
+
+/* -----------------------------------     ABOUT US        --------------------------------- */
+
+
+
+
+.about-us-container{
+    padding: 50px 60px;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+}
+
+.about-us-container h3{
+    margin: 20px 0;
+}
+
+.about-us-container small{
+    font-size: 12px;
+}
+
+.about-us-container abbr{
+    margin: 0 10px;
+}
+
+.about-us-container span{
+    color: #E81E1E;
+}
+
+.about-us-card{
+    display: flex;
+    flex-basis: 45%;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-us-container hr{
+    margin: 16px 0;
+}
+
+.about-us-img, .about-us-text{
+    padding: 8px 20px;
+}
+
+.about-us-text{
+    margin: auto;
+    text-align: justify;
+}
+
+
+
+
+/* ----------------------------------      CAREER          ------------------------------ */
+
+
+
+
+.career-top{
+    background-color: #6eac50;
+    padding: 50px 60px;
+    color: white;
+    text-align: right;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+}
+
+.career-top h3{
+    font-size: 30px;
+}
+
+.career-top p{
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.career-bottom{
+    padding: 50px 60px;
+    text-align: left;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+}
+
+.career-bottom small{
+    font-size: 12px;
+
+}
+
+.career-bottom abbr{
+    margin: 0 10px;
+}
+
+.career-bottom span{
+    color: #E81E1E;
+}
+
+.career-bottom p{
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+/* -----------------------------------------         CONTACT US          ------------------------- */
+
+
+
+
+
+.contact-container{
+    font-family: 'Poppins';
+    display: flex;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-left{
+    box-shadow: 0px 5px 10px 0px #aaa; 
+    padding: 30px 60px;
+}
+
+.contact-left h2{
+    text-transform: capitalize;
+    font-size: 26px;
+    margin: 12px 0;
+}
+
+.contact-left .control-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-left .control-group input{
+    margin: 12px 0;
+    flex-basis: 45%;
+    padding: 12px 12px;
+    outline: none;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #949ba7;
+}
+
+.contact-left textarea{
+    padding: 12px 12px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #949ba7;
+    width: 100%;
+}
+
+.contact-left button{
+    float: right;
+    padding: 16px 32px;
+    margin-top: 24px;
+    background-color: #6eac50;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.contact-right{
+    background-color: #6eac50;
+    color: white;
+    padding: 20px 32px;
+    flex-basis: 40%;
+}
+
+.contact-right h2{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.contact-right p{
+    margin-top: 6px;
+    text-align: justify;
+}
+
+.site-office{
+    margin: 18px 0;
+}
+
+.site-office p{
+    text-transform: capitalize;
+    position: relative;
+}
+
+.site-office i{
+    float: right;
+    margin-top: -16px;
+}
+
+.contact-bottom{
+    margin: -40px -32px;
+    padding: 20px 0;
+    background-color: #3071d8;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-bottom h3{
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================       MEDIA QUERIES       =============================================== */
+
+
+
+
+
+
+@media (max-width:1180px) {
+
+    nav ul li{
+        margin: 10px 12px;
+    }
+
+    .navbar ul li a#contact {
+        border: 2px solid #6eac50;
+        padding: 8px 18px;
+        border-radius: 4px;
+        transition: 0.4s;
+    }
+    
+}
+
+
+@media (max-width:1050px) {
+
+    
+    .navbar{
+        position: fixed;
+        background-color: white;
+        width: 100%;
+    }
+
+    nav .menu-bar i{
+        display: block;
+    }
+
+    #click:checked ~ .menu-bar i:before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+    .navbar .logo{
+        margin-left: 10px;
+    }
+
+    nav ul{
+        margin-top: -8px;
+        position: fixed;
+        background: #6fac50;
+        top: 80px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li{
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    nav ul li a{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        /* margin-left: -40px; */
+        font-weight: 500;
+    }   
+
+    #home .container {
+        padding: 30px 60px;
+    }
+
+    
+    .home-container h2 {
+        font-size: 28px;
+    }
+
+    .home-container p {
+        font-size: 18px;
+    }
+
+    .home-description .home-slogan .home-icon i {
+        font-size: 45px;
+    }
+
+    .home-content h3 {
+        font-size: 35px;
+    }
+
+    .home-content p{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+
+}
+
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and down) */
+
+@media (max-width:991px) {
+
+
+    
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+
+@media (max-width:768px) {
+
+    /* -----------   HOME    ---------------- */
+
+    .home-content h3{
+        font-size: 28px;
+    }
+
+    .home-content p{
+        font-size: 14px;
+    }
+
+    .home-description .home-slogan{
+        padding-right: 25px;
+    }
+
+    .what-we-do-row1, .what-we-do-row2{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .what-we-do-card{
+        width: 60%;
+        margin: 15px 0;
+    }
+
+    #product>p{
+        font-size: 16px;
+    }
+
+    .product-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .product-card{
+        width: 70%;
+        margin: 15px 0;
+    } 
+
+    .product-card .pdf-text {
+        font-size: 14px;
+        float: right;
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    footer P {
+        font-size: 14px;
+    }
+    
+
+    /* ----------------    SERVICES    -------------  */
+
+    .service-container{
+        flex-direction: column;
+        align-items: center;
+        height: 1400px;
+    }
+
+    .card-header h4 {
+        margin-right: 345px;
+    }
+
+
+    /* ---------------     CAREER      ---------------- */
+
+    .career-top h3 {
+        font-size: 20px;
+    }
+
+    .career-top p {
+        font-size: 15px;
+    }
+
+    .career-bottom p {
+        font-size: 25px;
+    }
+
+
+    /* ---------------     CAREER      ---------------- */
+
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+        min-height: 1400px;
+    }
+
+    .contact-left, .contact-right{
+        margin: 20px 0;
+        width: 85%;
+    }
+
+
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media (max-width:600px) {
+
+    #home .container{
+        padding: 10px 20px;
+    }
+
+    .home-description{
+        flex-direction: column;
+    }
+
+    .home-container{
+        margin-top: 150px;
+    }
+
+    .home-description .home-slogan {
+        padding-right: 15px;
+    }
+
+    .home-slogan .home-content {
+        margin-left: 10px;
+    }
+
+    .home-description .home-slogan .home-icon i {
+        font-size: 30px;
+    }
+
+    .home-content h3{
+        margin-top: 12px;
+    }
+
+        
+    #about {
+        padding: 80px 35px;
+    }
+
+    #about h2{
+        font-size: 7vw;
+    }
+
+    #what-we-do {
+        padding: 80px 15px;
+    }
+
+    #product {
+        padding: 80px 10px;
+    }
+
+
+
+    /* ----------      SERVICES     ----------- */
+
+    .service-note {
+        margin-top: 0;
+    }
+     .service-note{
+        padding: 120px 20px;
+    }
+
+    .service-container{
+        height: 1650px;
+    }
+
+    .service-card{
+        width: 75%;
+    }
+
+    .card-header h4 {
+        margin-right: 145px;
+    }
+
+    .about-us-container {
+        padding: 130px 12px;
+    }
+
+    .career-top{
+        /* margin: 50px 0; */
+        padding: 130px 15px;
+    }
+
+    .contact-container{
+        min-height: 1700px;
+    }
+    
+    .contact-left{
+        padding: 30px 10px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .about-us-card{
+        flex-direction: column;
+    }
+
+    .about-us-img{
+        margin: 0 auto;
+    }
+
+
+
+    
+}
+
+
+
+
+@media (max-width:560px) {
+
+    .contact-container{
+    }
+
+    .contact-left .control-group{
+        flex-direction: column;
+    }
+    
+}
+
+
+
